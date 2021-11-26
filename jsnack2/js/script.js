@@ -1,6 +1,6 @@
 // jsnack2
 // In un array sono contenuti i nomi degli invitati 
-// alla festa del grande Gatsby, chiedi all’utente il
+// alla festa del grande Gatsby, chiedi all'utente il
 //  suo nome e comunicagli 
 //  se può partecipare o no alla festa.
 
@@ -17,14 +17,17 @@ i = 0;
 
 entrata = false;
 
-while (i < lista_invitati.length || entrata == true) {
-    i++;
+//ciclo fintanto che non arrivo a fine lista_invitati
+//e l'entrata è false
+while (i < lista_invitati.length && entrata == false) 
+{
+    
     if (nome_utente == lista_invitati[i]) {
         entrata = true;  
     }
     
-    console.log(i);
-    
+    console.log(i); 
+    i++;
 }
 
 if (entrata == true) {
