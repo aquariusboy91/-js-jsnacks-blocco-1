@@ -17,16 +17,20 @@ i = 0;
 
 entrata = false;
 
-while (i = lista_invitati.length || nome_utente == lista_invitati[i]) {
+while (i < lista_invitati.length || entrata == true) {
     i++;
-    entrata = true;
+    if (nome_utente == lista_invitati[i]) {
+        entrata = true;  
+    }
+    
+    console.log(i);
+    
 }
-
-console.log (entrata);
 
 if (entrata == true) {
     document.writeln("puoi entrare");
 } else {
-    document.writeln("non puoi");
+    document.writeln("non puoi entrare");
 }
 
+console.log (entrata);
